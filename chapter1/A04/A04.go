@@ -21,8 +21,8 @@ func main() {
 
 	var n int
 	fmt.Scan(&n)
+	//100
 	for i := 8; i >= 0; i-- {
-		xi := 1 << i
 
 	}
 }
