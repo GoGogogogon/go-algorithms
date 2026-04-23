@@ -19,10 +19,15 @@ import "fmt"
 
 func main() {
 
-	var n int
+	var n string
+	var sum int
 	fmt.Scan(&n)
-	//100
-	for i := 8; i >= 0; i-- {
-
+	//1100
+	for i := 0; i < len(n); i++ {
+		if n[i] == '1' {
+			a := len(n) - 1 - i
+			sum += 1 << a
+		}
 	}
+	fmt.Print(sum)
 }
