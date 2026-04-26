@@ -52,7 +52,7 @@ func main() {
 	// ルートを記録するスライス
 
 	// 現在地が1（スタート）に辿り着くまで回し続ける
-	for current > 1 {
+	for current >= 1 {
 
 		route = append(route, current)
 		if current == 1 {
@@ -62,6 +62,7 @@ func main() {
 		current = suuti[current]
 	}
 
+	fmt.Println(len(route))
 	for i := len(route) - 1; i >= 0; i-- {
 		fmt.Print(route[i], " ")
 	}
